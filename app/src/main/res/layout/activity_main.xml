@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <TextView
+        android:id="@+id/Naslov"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="50dp"
+        android:breakStrategy="high_quality"
+        android:bufferType="normal"
+        android:capitalize="words"
+        android:fontFamily="sans-serif-medium"
+        android:text="Dobrodošli U Studirajmo Zajedno"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:text="Molimo popunite potrebne podatke kako bi započeli "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Naslov" />
+
+    <EditText
+        android:id="@+id/prosjekInput"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/surface_container"
+        android:cursorVisible="false"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Prosjek"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/smijer_spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/smijer_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/smijer_spinner" />
+
+    <Spinner
+        android:id="@+id/smijer_spinner"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/surface_container"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/surface_container_highest"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="Nastavi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prosjekInput"
+        android:textColor="@color/on_surface" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StudirajmoZajednoJava" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="Theme.StudirajmoZajednoJava" parent="Base.Theme.StudirajmoZajednoJava" />
+
+    <style name="Theme.StudirajmoZajednoJava.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.StudirajmoZajednoJava.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.StudirajmoZajednoJava.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.StudirajmoZajednoJava.Fullscreen" parent="Theme.StudirajmoZajednoJava">
+        <item name="android:actionBarStyle">
+            @style/Widget.Theme.StudirajmoZajednoJava.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.StudirajmoZajednoJava.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+    <style name="Theme.Material3.DayNight" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
